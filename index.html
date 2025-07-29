@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praxis Intelligence Division | The truth is in the chaos.</title>
+    <script type="module" src="/src/index.ts" defer async></script>
+    <link href="/src/style.css" rel="stylesheet" />
+  </head>
+
+  <body
+    class="font-serif text-white bg-black p-4 h-full min-h-screen max-w-screen-xl mx-auto"
+  >
+    <div
+      class="border-8 border-double border-yellow-200 p-4 space-y-4 h-full w-full"
+    >
+      <div class="inline-block text-yellow-200 mx-auto sm:float-left sm:mr-6">
+        <div
+          class="font-mono whitespace-pre inline-block text-logo font-bold"
+          id="logo"
+        >
+          <script>
+            document.getElementById(
+              "logo"
+            ).innerText = `                       .....
+                         .........                       ..
+                    ................                     ,;.
+                         ...............  .          ..':ddc,..
+             ....................';;'........        ...,cl,..
+             ......'',,,...........,;;,,,'''''.          ',
+      ..............''',;,............'';;;,'....        ..
+             ......''',,',;;,'''''''.......;:;,,,,..
+          ............',',;:c:;'.......,,...';;::,,'...
+         ......''...''.','',;;,'........,;;,..',;:ccc::,'..
+         ...........',,',,,,'''...........';,,,''''',::::::,.
+        .....   .......''.................,;:::;,;,'.','''''.
+     .   .  .  .................,,...'',,;;;;,',;:c:,''..',;;,...
+           ................      .......,;;:;;;;;;::::::;,,,;:c:,',,'.
+          .......''........... .........'',;::::;,,,'...',,,;:c:,..;l;.
+        .  .....';'.'....              ......,;:;,,'.      ..',,;:;::'
+       .........,;.',,....             ..  ....',;,,..       .  ...''.
+        .........',,,,'.....                 . ....;;..         .  .
+         .........'',,;,'.....                    ..;;....
+           .........',;;;;;;'.....                  .',,.....
+              ... ...,,,;;;;;;;;,'....              ..',,,,,.
+               .. ......',;;;;;;;,''.....           .....''.
+               ...........',;::;;;,,'......              ..
+                 '............'','.,,'.....
+                        ........';'..''....
+                         ....  ..'..........
+                          ... ..... .      .
+          ..             ...  ..............
+           ..      .   ........''''''''''''''''.....
+            ..................               ...........
+ ..           .........    ........',''...  ..       .......
+   ...  ... ......        ..,;,'',,'.......',,,..         .....
+      ..  .....     .......''','........   .',,''..          ....
+         ...      ....''''''.....  ..,,,.   .''''..             ...
+        .        ........''..     ......     ....       .         ...
+                 ........''..    .','....                            .
+                ..........'''..  .''',,,,'..                    .
+               .. ...........'....''''..''...
+                   ....................... ...
+                    .....................
+                       .. ...........
+                          ........
+                              ..`;
+          </script>
+        </div>
+        <br />
+        <p class="text-sm text-center">THE TRUTH IS IN THE CHAOS</p>
+      </div>
+      <h1 class="font-bold text-2xl">Praxis Intelligence Division</h1>
+      <p>
+        We are a community-run
+        <a href="https://praxisnation.com">Praxis</a> cell. Our purpose is to
+        maintain digital infrastructure and provide critical intelligence for
+        national security.
+      </p>
+      <p>
+        If you would like to join, please request to be added to the Praxis
+        Intelligence cell in
+        <code>#start-a-cell</code> in the
+        <a href="https://discord.gg/praxis">Discord server</a>.
+        <i class="text-sm"
+          >(Currently not very active - if you'd like to take over, contact the
+          current lead)</i
+        >
+      </p>
+      <p>
+        The current lead of the P-ID is
+        <a href="https://lynett.me">lynett.eth</a> (<code>alt.box</code> on
+        Discord)
+      </p>
+      <hr class="my-4" />
+      <p>The following is a list of our initiatives:</p>
+      <ol class="list-disc list-inside">
+        <li>
+          Matrix homeserver <span class="text-red-500">(discontinued)</span>
+        </li>
+        <li>
+          WireGuard VPN
+          <span class="text-blue-400">(planned, ~Aug-Sep 2025)</span>
+        </li>
+        <li>
+          Rocket.Chat instance
+          <span class="text-blue-400">(planned, ~Aug-Sep 2025)</span>
+        </li>
+        <li>
+          Sovereign AI platform
+          <span class="text-blue-400">(planned, ~2026-2027)</span>
+        </li>
+      </ol>
+      <hr class="my-4" />
+      <p>
+        At the moment, we have one machine owned by a P-ID member colocated at
+        our infrastructure provider
+        <a href="https://altivox.net">Altivox Networks</a>. The hardware
+        specifications of the machine running PID-TARSKI, as well as other
+        related information are as follows.
+      </p>
+      <ol class="list-inside list-disc text-sm">
+        <li>HP ProLiant DL360 Gen9</li>
+        <li>2x Xeon E5-2660v3 @ 2.6GHz (20 cores, 40 threads)</li>
+        <li>384GB RAM (24x 16GB DDR4-2133 ECC)</li>
+        <li>2TB SSD (3x 960GB Samsung SM863, RAID 5)</li>
+        <li>
+          1Gbps Internet connection via
+          <a href="https://cogentco.com">Cogent Communications</a>
+        </li>
+        <li>
+          30Tbps+ L3/L4 DDoS protection via
+          <a href="https://globalsecurelayer.com">Global Secure Layer</a>
+        </li>
+        <li>5x IPv4 addresses (38.129.141.18/29)</li>
+      </ol>
+      <noscript
+        >The network status tester will not work without JavaScript.</noscript
+      >
+      <p id="latency" class="animate-pulse">
+        Testing connection to PID-TARSKI...
+      </p>
+      <button
+        id="rerun"
+        class="py-1 px-2 bg-indigo-600 border-3 border-double cursor-pointer hover:bg-indigo-500 disabled:bg-gray-600 disabled:cursor-not-allowed"
+      >
+        Rerun test
+      </button>
+      <footer>
+        <p class="text-sm italic text-center">
+          Page last updated on 2025-07-29.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

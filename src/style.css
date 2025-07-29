@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+.text-logo {
+  font-size: 4px
+    /* 0.75rem = 12px */
+  ;
+  line-height: var(--tw-leading, var(--text-xs--line-height)
+      /* calc(1 / 0.75) ≈ 1.3333 */
+    );
+  letter-spacing: 0.08em;
+
+}
+
+a:not(.no-link-decoration) {
+  @apply hover:text-cyan-400 text-cyan-500 underline
+}
+
+hr {
+  @apply border-t-1 border-yellow-200
+}
